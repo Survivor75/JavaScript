@@ -1,7 +1,25 @@
-addEventListener (" click " , function ( event ) {
-var dot = document . createElement (" div ") ;
-dot . className = " dot ";
-dot . style . left = ( event . pageX - 4) + " px ";
-dot . style . top = ( event . pageY - 4) + " px ";
-document . body . appendChild ( dot );
+var lastX ; // Tracks the last observed mouse X position
+var rect = document . querySelector (" div ") ;
+rect . addEventListener (" mousedown " , function ( event ) {
+if ( event . which == 1) {
+lastX = event . pageX ;
+addEventListener (" mousemove " , moved );
+event . preventDefault () ; // Prevent selection
+}
 }) ;
+function buttonPressed ( event ) {
+if ( event . buttons == null )
+return event . which != 0;
+else
+return event . buttons != 0;
+}
+function moved ( event ) {
+if (! buttonPressed ( event )) {
+removeEventListener (" mousemove ", moved );
+} else {
+var dist = event . pageX - lastX ;
+var newWidth = Math . max (10 , rect . offsetWidth + dist );
+rect . style . width = newWidth + " px ";
+lastX = event . pageX ;
+}
+}
