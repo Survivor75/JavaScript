@@ -1,4 +1,5 @@
-This repository contains tutorials on the following :
-1. Interactive JavaScrpt.
+This repository contains Nuggets on the following : 1. JavaScrpt.
 2. AngularJS.
-3. MeteorJS.
+3. Chrome-Extensions.
+4. ParticlesJS.
+5. etc.
