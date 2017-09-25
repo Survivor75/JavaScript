@@ -6,12 +6,12 @@ body{
 
 #particles-js{
   background:firebrick;
-  height:400px;
+  height:425px;
 }
 
 #login{
   background:#fff;
-  opacity:0.9;
+  opacity:0.7;
   padding:2em;
   border:#ccc 2px solid;
   position:absolute;

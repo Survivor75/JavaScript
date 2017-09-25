@@ -1,7 +1,7 @@
 {
   "particles":{
     "number":{
-      "value":400
+      "value":250
     },
     "color":{
       "value":"#fff"
@@ -59,7 +59,7 @@
     "modes":{
       "repulse":{
         "distance":50,
-        "duration":0.4
+        "duration":0.5
       },
       "bubble":{
         "distance":100,
