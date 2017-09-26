@@ -10,5 +10,4 @@ function loadDoc() {
   };
   xhttp.open("GET", "https://cors-anywhere.herokuapp.com/http://carnes.cc/code/ajax_example.txt", true);
   xhttp.send();
-  console.log("World");
 }
