@@ -16,7 +16,7 @@ var Subject = function() {
     notifyObserver: function(observer) {
       var index = observers.indexOf(observer);
       if(index > -1) {
-        observers[index].notify(index);
+        observers[index].notify();
       }
     },
     notifyAllObservers: function() {
