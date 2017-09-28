@@ -6,8 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  homeTitle = "Welcome Ninjas"
-  myString = "I love chicken"
+  homeTitle = "Welcome To Ninja Belts"
+  myString = "I love chicken"``
   alertMe(val){
     alert(val)
   }
