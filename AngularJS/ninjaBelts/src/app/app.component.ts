@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Ninja Belts';
+  name = 'ninja';
+  ninja = {
+    name: 'Ryu',
+    belt: 'Red'
+  }
 }
