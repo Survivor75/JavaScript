@@ -7,10 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
   homeTitle = "Welcome To Ninja Belts"
-  myString = "I love chicken"``
-  alertMe(val){
-    alert(val)
-  }
+  ninja = {
+  name: "Yoshi",
+  belt: "Black"
+  };
+
   constructor() { }
 
   ngOnInit() {
