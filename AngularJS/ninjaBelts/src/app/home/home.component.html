@@ -1,10 +1,8 @@
 <p>
   {{homeTitle}}
 </p>
+
 <ng-content> </ng-content>
-<p>
-  {{ninja.name}}
-</p>
-<p>
-  {{ninja.belt}}
-</p>
+<input [(ngModel)]="ninja.name"/>
+<p>{{ninja.name}}</p>
+<p>{{ninja.belt}}</p>
