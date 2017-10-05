@@ -1,4 +1,4 @@
-// JS Nuggets
+
 // Clean Code: Functions (Part 1)
 
 // Function arguments (2 or fewer ideally)

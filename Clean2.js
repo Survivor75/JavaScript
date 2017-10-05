@@ -1,4 +1,4 @@
-// JS Nuggets
+
 // Clean Code: Functions (Part 2)
 
 // Avoid side effects
