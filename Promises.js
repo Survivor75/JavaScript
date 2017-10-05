@@ -1,4 +1,4 @@
-// JS Nuggets: Promises
+
 
 // Basic usage
 var p = new Promise(function(resolve, reject) {
