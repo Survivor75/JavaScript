@@ -17,4 +17,4 @@ console.log(stringified);
 // parse method
 var stringJSON = '{ "name":"Beau", "kids":2,"state":"Michigan"}';
 var myParse = JSON.parse(stringJSON);
-console.log(myParse);
+console.log(myParse.name);

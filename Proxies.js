@@ -16,26 +16,6 @@ p.b = undefined;
 console.log(p.a, p.b);
 console.log('c' in p, p.c);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // Example 2
 let validator = {
   set: function(obj, prop, value) {
