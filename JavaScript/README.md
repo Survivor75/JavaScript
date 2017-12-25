@@ -1,5 +1,6 @@
-This repository contains Nuggets on the following : 1. JavaScrpt.
-2. AngularJS.
+This repository contains Nuggets on the following : 
+1. JavaScrpt.
+2. REACTJS.
 3. Chrome-Extensions.
 4. ParticlesJS.
-5. etc.
+5. Python
