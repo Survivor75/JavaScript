@@ -1,0 +1,36 @@
+1512351027512	geckodriver	INFO	geckodriver 0.19.1
+1512351027516	geckodriver	INFO	Listening on 127.0.0.1:56903
+1512351028712	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.yVBbrkwtqdiP"
+1512351032214	Marionette	INFO	Enabled via --marionette
+1512351036191	Marionette	INFO	Listening on port 35021
+1512351036247	Marionette	WARN	TLS certificate errors will be ignored for this session
+1512351036311	Marionette	DEBUG	Register listener.js for window 2147483649
+1512351036390	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1512351048402	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1512351048403	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1512351054466	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://unsplash.com/"
+1512351135230	Marionette	DEBUG	Received DOM event "pageshow" for "https://unsplash.com/"
+1512351160562	geckodriver	INFO	geckodriver 0.19.1
+1512351160565	geckodriver	INFO	Listening on 127.0.0.1:54983
+1512351161682	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.Tp6DacDvvQPq"
+1512351162224	Marionette	INFO	Enabled via --marionette
+1512351163839	Marionette	INFO	Listening on port 35557
+1512351163923	Marionette	WARN	TLS certificate errors will be ignored for this session
+1512351164005	Marionette	DEBUG	Register listener.js for window 2147483649
+1512351164048	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1512351175694	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1512351175694	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1512351222720	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://unsplash.com/"
+1512351291785	Marionette	DEBUG	Received DOM event "pageshow" for "https://unsplash.com/"
+1512351874956	geckodriver	INFO	geckodriver 0.19.1
+1512351874960	geckodriver	INFO	Listening on 127.0.0.1:50637
+1512351876079	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.sPP9qlaw1vVQ"
+1512351876605	Marionette	INFO	Enabled via --marionette
+1512351878143	Marionette	INFO	Listening on port 39149
+1512351878256	Marionette	WARN	TLS certificate errors will be ignored for this session
+1512351878329	Marionette	DEBUG	Register listener.js for window 2147483649
+1512351878359	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1512351880247	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1512351880248	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1512351886068	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://unsplash.com/"
+1512351983208	Marionette	DEBUG	Received DOM event "pageshow" for "https://unsplash.com/"
