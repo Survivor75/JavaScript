@@ -28,12 +28,28 @@
                     <div class="text">Comments</div>
                 </div>
                 <form class="pure-form" id="comment-form">
-                    <!-- Here we will put a form to create new comment -->
+                  <div class="comment-form">
+                      <div class="left-side">
+                           <div class="row">
+                               <input type="text" required placeholder="enter your name" id="new_comment_name">
+                               <input placeholder="enter valid email" required type="email" id="new_comment_email">
+                            </div>
+                            <div class="row">
+                                <textarea placeholder="enter comment text" required id="new_comment_text" rows="3"></textarea>
+                            </div>
+                      </div>
+                     <div class="right-side">
+                            <button type="submit" class="button-secondary pure-button">Send Comment</button>
+                     </div>
+                 </div>
                 </form>
                  <div class="comments-list" id="comments-list">
                     <!-- Here we will display live comments -->
                 </div>
             </div>
         </section>
+        <script type="text/javascript" src="https://js.pusher.com/3.2/pusher.min.js"></script>
+        <script type="text/javascript" src="https://js.pusher.com/3.2/pusher.min.js"></script>
+        <script type="text/javascript" src="./app.js"></script>
     </body>
 </html>
