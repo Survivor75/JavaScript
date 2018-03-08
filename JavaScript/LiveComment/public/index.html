@@ -47,6 +47,22 @@
                     <!-- Here we will display live comments -->
                 </div>
             </div>
+            <div class="comments-list" id="comments-list">
+            <script id="comment-template" type="text/x-template">
+                <div class="user-icon">
+                    <img src="./assets/user.png" />
+                </div>
+                <div class="comment-info">
+                    <div class="row">
+                          <div class="name">{{name}}</div>
+                          <div class="email">{{email}}</div>
+                     </div>
+                     <div class="row">
+                           <div class="text">{{comment}}</div>
+                     </div>
+                 </div>
+             </script>
+            </div>
         </section>
         <script type="text/javascript" src="https://js.pusher.com/3.2/pusher.min.js"></script>
         <script type="text/javascript" src="https://js.pusher.com/3.2/pusher.min.js"></script>
