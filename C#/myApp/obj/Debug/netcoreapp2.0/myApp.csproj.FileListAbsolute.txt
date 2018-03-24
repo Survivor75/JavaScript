@@ -1,0 +1,10 @@
+/home/out/Documents/Unchained/C#/myApp/bin/Debug/netcoreapp2.0/myApp.deps.json
+/home/out/Documents/Unchained/C#/myApp/bin/Debug/netcoreapp2.0/myApp.runtimeconfig.json
+/home/out/Documents/Unchained/C#/myApp/bin/Debug/netcoreapp2.0/myApp.runtimeconfig.dev.json
+/home/out/Documents/Unchained/C#/myApp/bin/Debug/netcoreapp2.0/myApp.dll
+/home/out/Documents/Unchained/C#/myApp/bin/Debug/netcoreapp2.0/myApp.pdb
+/home/out/Documents/Unchained/C#/myApp/obj/Debug/netcoreapp2.0/myApp.csproj.CoreCompileInputs.cache
+/home/out/Documents/Unchained/C#/myApp/obj/Debug/netcoreapp2.0/myApp.AssemblyInfoInputs.cache
+/home/out/Documents/Unchained/C#/myApp/obj/Debug/netcoreapp2.0/myApp.AssemblyInfo.cs
+/home/out/Documents/Unchained/C#/myApp/obj/Debug/netcoreapp2.0/myApp.dll
+/home/out/Documents/Unchained/C#/myApp/obj/Debug/netcoreapp2.0/myApp.pdb
