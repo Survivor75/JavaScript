@@ -15,7 +15,7 @@ namespace Statements.Collections
 
         public void ConstantDeclaration(string[] args)
         {
-            const float pi = 3.14159271;
+            const float pi = 3.14F;
             const int r = 25;
 
             Console.WriteLine(pi * r *r);
@@ -78,7 +78,7 @@ namespace Statements.Collections
             }while(!string.IsNullOrEmpty(s));
         }
 
-        public voidForStatement(string[] args)
+        public void ForStatement(string[] args)
         {
             for(int i = 0; i < args.Length; i++)
                 Console.WriteLine(args[i]);
@@ -101,8 +101,8 @@ namespace Statements.Collections
             if(i < args.Length)
                 goto loop;
         }
-
-        public IEnumerable<int> Range(int from, int to)
+/*
+        public int Range(int from, int to)
         {
             for (int i = from; i < to; i++)
                 yield return i;
@@ -113,11 +113,11 @@ namespace Statements.Collections
         {
             foreach(int i in Range(-10,10))
             {
-                Console.WriteLine(i)
+                Console.WriteLine(i);
             }
         }
-        
-        public void Divide(double x, double y)
+*/      
+        public double Divide(double x, double y)
         {
             if(y == 0)
                 throw new DivideByZeroException();
@@ -134,9 +134,10 @@ namespace Statements.Collections
                 double y = double.Parse(args[1]);
                 Console.WriteLine(Divide(x, y));
             }
-            catch
+            
+            catch (InvalidOperationException e) 
             {
-                Console.WriteLine(e.message);
+                Console.WriteLine(e.Message);
             }
             finally
             {
@@ -175,7 +176,7 @@ namespace Statements.Collections
                     balance -= amount;
                 }
             }
-
+/*
             public void Using(string[] args)
             {
                 using (TextWriter w = File.CreateText("test.txt"))
@@ -185,6 +186,7 @@ namespace Statements.Collections
                     w.WriteLine("Line Three");
                 }
             }
+*/
         }
     }
 }
