@@ -1,6 +1,4 @@
 ﻿using System;
-using Acme.Collections;
-using Statements.Collections;
 
 namespace myApp
 {
@@ -8,18 +6,7 @@ namespace myApp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            Stack s = new Stack();
-            s.Push(1);
-            s.Push(10);
-            s.Push(100);
-            Console.WriteLine(s.Pop());
-            Console.WriteLine(s.Pop());
-            Console.WriteLine(s.Pop());
-
-            int i = 123;
-            object o = i;
-            int j = (int)o;        
+            Console.WriteLine('Hello World!');
         }
     }
 }
