@@ -1,0 +1,14 @@
+{
+  "name": "d3indianf",
+  "version": "1.0.0",
+  "description": "NowFloats Data Map (CLIENT)",
+  "main": "nf_map.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Survivotr75",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0"
+  }
+}

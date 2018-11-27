@@ -1,0 +1,20 @@
+{
+  "name": "nf_map",
+  "version": "1.0.0",
+  "description": "NowFloats Data Map",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Survivor75",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "fetch-api": "0.0.2",
+    "mongodb": "^3.1.10"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.6"
+  }
+}

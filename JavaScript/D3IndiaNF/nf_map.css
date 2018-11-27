@@ -1,0 +1,67 @@
+body {
+  background-image: url("./assets/img/unsplash.jpg");
+}
+
+.state {
+    fill: none;
+    stroke: #7cb342;
+    stroke-width: 3.5;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 3px 3px 5px 6px #ccc;
+}
+
+.state:hover {
+    fill-opacity: 0.5;
+}
+
+#statesvg {
+  height: 1000px;
+  width : 590px;
+  margin: 0 auto;
+}
+
+#tooltip {
+    position: absolute;
+    text-align: center;
+    padding: 25px;
+    margin: 25px;
+    font: 15px sans-serif;
+    background: lightsteelblue;
+    border: 1.5px;
+    border-radius: 2.5px;
+    pointer-events: none;
+}
+
+#tooltip h3 {
+    margin: 0;
+    font-size: 15px;
+}
+
+#tooltip {
+    background: rgba(0, 0, 0, 0.95);
+    border: 1px solid grey;
+    border-radius: 5px;
+    font-size: 15px;
+    width: auto;
+    padding: 10px;
+    color: white;
+    opacity: 0;
+}
+
+#tooltip table {
+    table-layout: fixed;
+}
+
+#tooltip tr td {
+    padding: 0;
+    margin: 0;
+}
+
+#tooltip tr td:nth-child(1) {
+    width: 250px;
+}
+
+#tooltip tr td:nth-child(2) {
+    text-align: center;
+}
