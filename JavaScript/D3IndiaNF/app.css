@@ -8,10 +8,6 @@ body {
   pointer-events: all;
 }
 
-#states {
-  fill: #aaa;
-}
-
 #states .active {
   fill: orange;
 }
