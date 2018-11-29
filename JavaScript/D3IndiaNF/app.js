@@ -28,7 +28,7 @@ d3.json("india_.json", function(error, data){
   drawSubUnitLabels(data);
   drawPlaces(data);
   drawOuterBoundary(data, boundary);
-  setUpZoom(data, subunits);
+  //setUpZoom(data, subunits);
 });
 
 
@@ -164,15 +164,13 @@ function setUpZoom(data, subunits){
         var state_name = d.properties.st_nm;
         zoom(d, state_name)
       });
-  console.log("subunit");
-  colorSubunits(subunits)
-  console.log("subunit");
 }
 
 function particle() {
   var x = d3.mouse(this);
 
-  g.insert("circle", "rect")
+  g.append("g")
+      .insert("circle", "rect")
       .attr("cx", x[0])
       .attr("cy", x[1])
       .attr("r", 1e-6)

@@ -3,11 +3,6 @@ body {
   margin: 0;
 }
 
-.background {
-  fill: none;
-  pointer-events: all;
-}
-
 #states .active {
   fill: orange;
 }
@@ -18,7 +13,6 @@ body {
   stroke-width: 1.5px;
   stroke-linejoin: round;
   stroke-linecap: round;
-  pointer-events: none;
 }
 
 rect {
