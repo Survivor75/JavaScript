@@ -8,14 +8,6 @@ module.exports = function(app, db) {
 
         const query = { "PaymentState": 0, "City": territory };
         
-        // db.collection('floatingPointInternal').findOne(query, (err, item) => {
-        //     if (err) {
-        //       res.send({'error':'An error has occurred - '+ err});
-        //     } else {
-        //         res.send(item);
-        //     }
-        //   });
-
         db.collection('floatingPointInternal').find(query).toArray(function(err, item){
             if (err) {
                 res.send({'error':'An error has occurred - '+ err});
