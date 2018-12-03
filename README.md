@@ -49,7 +49,7 @@ Ingredients for a simple Image Scraper
 1. Python (3.6.3 or newer)
 2. Pycharm (Community edition is just fine)
 3. pip install requests Pillow selenium
-4. geckodriver (read below for instructions)
+4. geckodriver 
 5. Mozlla Firefox (as if you didn’t have it installed)
 6. Working internet connection (obviously)
 7. 30 minutes of your time (possibly less)
