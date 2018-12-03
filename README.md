@@ -6,7 +6,7 @@ This repository contains Nuggets on the following : 1. JavaScript 2. Python
 ### particles
 Creating particles using JavaScript
 
-![alt text](https://github.com/Unchained/JavaScript/particles/img/particles.png "particle.js")
+![alt text](https://github.com/Survivor75/Unchained/blob/master/JavaScript/partcles/img/particles.png?raw=true "particle.js")
 
 ### DrumKit
 Drum Kit implementation in vanilla JavaScript
