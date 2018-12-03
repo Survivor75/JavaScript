@@ -1,9 +1,14 @@
 var width = window.innerWidth, height = window.innerHeight;
-
+var responseObject = {
+  unpaid_fp_count : 0,
+  paid_fp_count   : 0,
+  cf_count        : 0,
+  fos_count       : 0,
+  renewal_percent : 100
+}
 var projection = d3.geoMercator();
 
-var index = 0, centered;
-
+var index = 0;
 var path = d3.geoPath()
           .projection(projection)
           .pointRadius(2);
@@ -15,6 +20,7 @@ var svg = d3.select("body").append("svg")
 var g = svg.append("g");
 
 g.append("rect")
+    .attr("class", "background")
     .attr("width", width)
     .attr("height", height)
     .on("click", particle);
@@ -28,7 +34,6 @@ d3.json("india_.json", function(error, data){
   drawSubUnitLabels(data);
   drawPlaces(data);
   drawOuterBoundary(data, boundary);
-  //setUpZoom(data, subunits);
 });
 
 
@@ -49,9 +54,20 @@ function hoverOut() {
     d3.select("#info").transition().duration(500).style("opacity", 0);
 }
 
-function xhrRequest() {
+function xhrRequest(state_name) {
+  var settings = {
+    "async"       : true,
+    "url"         : "http://localhost:7000/renewal_data?state="+state_name,
+    "method"      : "GET",
+    "headers"     : {
+      "content-type": "application/json"
+    }
+  }
 
-    console.log("API CALL");
+  $.ajax(settings).done(function (response) {
+    responseObject.unpaid_fp_count = response
+    console.log(responseObject);
+  });
 }
 
 function centerZoom(data){
@@ -140,7 +156,10 @@ function drawSubUnitLabels(data){
       .on('mouseout', function(){
         hoverOut();
       })
-      .on('click', xhrRequest);
+      .on('click', function(d){
+        var state_name = d.properties.st_nm;
+        xhrRequest(state_name);
+      });
 
 }
 
@@ -153,24 +172,10 @@ function colorSubunits(subunits) {
 
 }
 
-function setUpZoom(data, subunits){
-  g.append("g")
-      .attr("id", "states")
-      .selectAll("path")
-      .data(topojson.feature(data, data.objects.polygons).features)
-      .enter().append("path")
-      .attr("d", path)
-      .on("click", function(d){
-        var state_name = d.properties.st_nm;
-        zoom(d, state_name)
-      });
-}
-
 function particle() {
   var x = d3.mouse(this);
 
-  g.append("g")
-      .insert("circle", "rect")
+  g.insert("circle", "rect")
       .attr("cx", x[0])
       .attr("cy", x[1])
       .attr("r", 1e-6)
@@ -184,35 +189,4 @@ function particle() {
       .remove();
 
   d3.event.preventDefault();
-}
-
-function zoom(d, state_name) {
-  var x, y, k;
-
-  if (d && centered !== d) {
-    var centroid = path.centroid(d);
-    x = centroid[0];
-    y = centroid[1];
-    k = 4;
-    centered = d;
-
-    hoverOver(state_name)
-
-  } else {
-    x = width / 2;
-    y = height / 2;
-    k = 1;
-    centered = null;
-
-    hoverOut()
-
-  }
-
-  g.selectAll("path")
-      .classed("active", centered && function(d) { return d === centered; });
-
-  g.transition()
-      .duration(750)
-      .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")scale(" + k + ")translate(" + -x + "," + -y + ")")
-      .style("stroke-width", 1.5 / k + "px");
 }
