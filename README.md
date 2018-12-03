@@ -30,5 +30,26 @@ Backend for D3IndiaNF implemented in Node.js Express and MongoDB
 ## Python
 
 ### Interesting-People-On-Medium
+Medium has a large amount of content, a large number of users, and an almost overwhelming number of posts. When you try to find interesting users to interact with, you’re flooded with visual noise.
+
+An interesting user is someone who is from your network, who is active, and who writes responses that are generally appreciated by the Medium community.
+
+How to do it ?
+
+1. Get all the users from “Followings” list
+2. Get the latest posts of each user
+3. Get all the responses to each post
+4. Filter out responses that are older than 30 days
+5. Filter out responses that have less than a minimum number of recommendations
+6. Get the username of the author of each response
 
 ### UnsplashScraper
+Ingredients for a simple Image Scraper
+
+1. Python (3.6.3 or newer)
+2. Pycharm (Community edition is just fine)
+3. pip install requests Pillow selenium
+4. geckodriver (read below for instructions)
+5. Mozlla Firefox (as if you didn’t have it installed)
+6. Working internet connection (obviously)
+7. 30 minutes of your time (possibly less)
