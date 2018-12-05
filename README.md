@@ -27,6 +27,25 @@ Features :
 ### NF_MAP
 Backend for D3IndiaNF implemented in Node.js Express and MongoDB
 
+### _what_a_platform
+The game is roughly based on Dark Blue by Thomas Palef. I chose that game because it is both entertaining and minimalist. It looks like this (Level 1):
+
+![alt text](https://github.com/Survivor75/Unchained/blob/master/JavaScript/_what_a_platform/img/level_1.PNG?raw=true "particle.js")
+
+The dark box represents the player, whose task is to collect the yellow boxes (coins) while avoiding the red stuff (lava). A level is completed when all coins have been collected.
+
+The player can walk around with the left and right arrow keys and can jump with the up arrow. Jumping is a specialty of this game character. It can reach several times its own height and can change direction in midair. This may not be entirely realistic, but it helps give the player the feeling of being in direct control of the on-screen avatar.
+
+As of now it has 3 levels
+Level 2
+
+![alt text](https://github.com/Survivor75/Unchained/blob/master/JavaScript/_what_a_platform/img/level_2.PNG?raw=true "particle.js")
+
+Level 3
+
+![alt text](https://github.com/Survivor75/Unchained/blob/master/JavaScript/_what_a_platform/img/level_3.PNG?raw=true "particle.js")
+
+
 ## Python
 
 ### Interesting-People-On-Medium
