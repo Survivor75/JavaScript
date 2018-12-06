@@ -45,6 +45,12 @@ Level 3
 
 ![alt text](https://github.com/Survivor75/Unchained/blob/master/JavaScript/_what_a_platform/img/level_3.PNG?raw=true "particle.js")
 
+
+### Rock Paper Scissor
+
+![alt text](https://github.com/Survivor75/Unchained/blob/master/JavaScript/rock_paper_scissor/img/rps.PNG?raw=true "particle.js")
+
+
 ### Speech Detection
 
 ![alt text](https://github.com/Survivor75/Unchained/blob/master/JavaScript/SpeechDetection/img/speech.PNG?raw=true "particle.js")
