@@ -47,7 +47,7 @@ Level 3
 
 ### Speech Detection
 
-![alt text](https://github.com/Survivor75/Unchained/blob/master/JavaScript/SpeechDetection/speech.PNG?raw=true "particle.js")
+![alt text](https://github.com/Survivor75/Unchained/blob/master/JavaScript/SpeechDetection/img/speech.PNG?raw=true "particle.js")
 
 
 ## Python
