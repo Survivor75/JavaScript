@@ -3,7 +3,7 @@ This repository contains Nuggets on the following : 1. JavaScript 2. Python
 
 ##  JavaScript
 
-### particles
+### Particles
 Creating particles using JavaScript
 
 ![alt text](https://github.com/Survivor75/Unchained/blob/master/JavaScript/partcles/img/particles.png?raw=true "particle.js")
@@ -22,7 +22,7 @@ Features :
 2. Ripples Animation
 3. Zoom-In Zoom-Out of States
 
-![alt text](https://github.com/Survivor75/Unchained/blob/master/JavaScript/D3IndiaNF/img/india_nf.PNG?raw=true "particle.js")
+![alt text](https://github.com/Survivor75/Unchained/blob/master/JavaScript/D3IndiaNF/img/india_nf.PNG?raw=true "")
 
 ### NF_MAP
 Backend for D3IndiaNF implemented in Node.js Express and MongoDB
@@ -30,7 +30,7 @@ Backend for D3IndiaNF implemented in Node.js Express and MongoDB
 ### Baz_Man
 The game is roughly based on Dark Blue by Thomas Palef. I chose that game because it is both entertaining and minimalist. It looks like this (Level 1):
 
-![alt text](https://github.com/Survivor75/Unchained/blob/master/JavaScript/_what_a_platform/img/level_1.PNG?raw=true "particle.js")
+![alt text](https://github.com/Survivor75/Unchained/blob/master/JavaScript/_what_a_platform/img/level_1.PNG?raw=true "")
 
 The dark box represents the player, whose task is to collect the yellow boxes (coins) while avoiding the red stuff (lava). A level is completed when all coins have been collected.
 
@@ -39,21 +39,21 @@ The player can walk around with the left and right arrow keys and can jump with 
 As of now it has 3 levels
 Level 2
 
-![alt text](https://github.com/Survivor75/Unchained/blob/master/JavaScript/_what_a_platform/img/level_2.PNG?raw=true "particle.js")
+![alt text](https://github.com/Survivor75/Unchained/blob/master/JavaScript/_what_a_platform/img/level_2.PNG?raw=true "")
 
 Level 3
 
-![alt text](https://github.com/Survivor75/Unchained/blob/master/JavaScript/_what_a_platform/img/level_3.PNG?raw=true "particle.js")
+![alt text](https://github.com/Survivor75/Unchained/blob/master/JavaScript/_what_a_platform/img/level_3.PNG?raw=true "")
 
 
 ### Rock Paper Scissor
 
-![alt text](https://github.com/Survivor75/Unchained/blob/master/JavaScript/rock_paper_scissor/img/rps.PNG?raw=true "particle.js")
+![alt text](https://github.com/Survivor75/Unchained/blob/master/JavaScript/rock_paper_scissor/img/rps.PNG?raw=true "")
 
 
 ### Speech Detection
 
-![alt text](https://github.com/Survivor75/Unchained/blob/master/JavaScript/SpeechDetection/img/speech.PNG?raw=true "particle.js")
+![alt text](https://github.com/Survivor75/Unchained/blob/master/JavaScript/SpeechDetection/img/speech.PNG?raw=true "")
 
 
 ## Python
