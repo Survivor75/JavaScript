@@ -1,0 +1,8 @@
+# Ignore node_modules
+node_modules/
+
+# Ignore VScode Preferences
+.vscode/
+
+# Ignore PyCharm Preferences
+.idea/

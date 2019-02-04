@@ -27,7 +27,7 @@ Features :
 ### NF_MAP
 Backend for D3IndiaNF implemented in Node.js Express and MongoDB
 
-### _what_a_platform
+### Baz_Man
 The game is roughly based on Dark Blue by Thomas Palef. I chose that game because it is both entertaining and minimalist. It looks like this (Level 1):
 
 ![alt text](https://github.com/Survivor75/Unchained/blob/master/JavaScript/_what_a_platform/img/level_1.PNG?raw=true "particle.js")
@@ -58,20 +58,6 @@ Level 3
 
 ## Python
 
-### Interesting-People-On-Medium
-Medium has a large amount of content, a large number of users, and an almost overwhelming number of posts. When you try to find interesting users to interact with, you’re flooded with visual noise.
-
-An interesting user is someone who is from your network, who is active, and who writes responses that are generally appreciated by the Medium community.
-
-How to do it ?
-
-1. Get all the users from “Followings” list
-2. Get the latest posts of each user
-3. Get all the responses to each post
-4. Filter out responses that are older than 30 days
-5. Filter out responses that have less than a minimum number of recommendations
-6. Get the username of the author of each response
-
 ### UnsplashScraper
 Ingredients for a simple Image Scraper
 
@@ -82,3 +68,5 @@ Ingredients for a simple Image Scraper
 5. Mozlla Firefox (as if you didn’t have it installed)
 6. Working internet connection (obviously)
 7. 30 minutes of your time (possibly less)
+
+### Cathedral
