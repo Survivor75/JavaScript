@@ -4,7 +4,9 @@ module.exports = function(app, db) {
 
     let User = require('../models/schema').User
     let Dish = require('../models/schema').Dish
-
+    
+    // AUTHENTICATION MIDDLEWARE -------------------
+    
     app.use(function(req, res, next) {
 
         var token = req.body.token || req.query.token || req.headers['x-access-token'];
@@ -35,41 +37,64 @@ module.exports = function(app, db) {
         }
     });      
 
-    app.get('/', function(req, res) {
-        res.json({ message: 'Welcome to the coolest API on earth!' });
-    });
-
+    // CRUD APIS -------------------
+    
     app.post('/createDish', function(req, res) {
-        res.json('Dish Created Successfully')
+                    
+        var dish = new Dish({ 
+            name: req.body.name, 
+            restaurantName: req.body.restaurantName
+        });
+
+        dish.save(function(err) {
+      
+            if (err) 
+                throw err;
+        
+            console.log('Dish Created Successfully');
+      
+            res.json({ success: true });
+        });
+           
     });
     
     app.get('/getDish', function(req, res) {
         
-        Dish.find({}, function(err, dish) {
+        Dish.findOne({
+            name: req.query.name, 
+            restaurantName: req.query.restaurantName
+        }, function(err, dish) {
             res.json(dish);
         });
     });
 
-    app.get('/updateDish', function(req, res) {
-        res.json('Dish Updated Successfully')
+    app.post('/updateDish', function(req, res) {
+        
+        Dish.findOneAndUpdate({
+            name: req.body.name, 
+            restaurantName: req.body.restaurantName
+        }, 
+        {
+            name: req.body.name + "100"
+        }, function(err, data){
+            if(err)
+                throw err;
+            
+            res.json({success: true, data: data})
+        })    
     });
 
-    app.get('/deleteDish', function(req, res) {
-        res.json('Dish Deleted Successfully')
+    app.post('/deleteDish', function(req, res) {
+        
+        Dish.findOneAndRemove({
+            name: req.body.name, 
+            restaurantName: req.body.restaurantName
+        }, function(err, data){
+            if(err)
+                throw err;
+            
+            res.json({success: true, data: data})
+        })
     });
-
-    app.get('/users', function(req, res) {
-
-        User.find({}, function(err, users) {
-            res.json(users);
-        });
-    });
-
-    app.get('/getDishes', function(req, res) {
-
-        Dish.find({}, function(err, dishes) {
-            res.json(dishes);
-        });
-    });
-
+    
 };

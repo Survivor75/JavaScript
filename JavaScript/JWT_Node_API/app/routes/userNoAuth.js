@@ -4,6 +4,8 @@ module.exports = function(app, db) {
 
     let User = require('../models/schema').User
     
+    // AUTHENTICATION API -------------------
+
     app.post('/authenticate', function(req, res) {
         
         User.findOne({
@@ -47,11 +49,14 @@ module.exports = function(app, db) {
         });
     });
     
+    // CREATE USER API -------------------
+
     app.post('/createUser', function(req, res) {
       
       var user = new User({ 
         name: req.body.name, 
         password: req.body.password,
+        admin: req.body.admin
       });
     
       user.save(function(err) {
@@ -66,7 +71,9 @@ module.exports = function(app, db) {
 
     });
 
-    app.get('/setup', function(req, res) {
+    // CREATE SUPER USER API -------------------
+
+    app.get('/createSuperUser', function(req, res) {
 
       var user = new User({ 
         name: 'Rick', 

@@ -11,7 +11,7 @@ var User = mongoose.model('User', new Schema({
 
 var Dish = mongoose.model('Dish', new Schema({ 
     name: {type: String, require: true},
-    restaurantId: {type: ObjectId, require: true}
+    restaurantName: {type: String, require: true}
 }));
 
 
