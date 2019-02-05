@@ -2,7 +2,7 @@ var jwt = require('jsonwebtoken');
 
 module.exports = function(app, db) {
 
-    let User = require('../models/schema').User
+    let Restaurant = require('../models/schema').Restaurant
     let Dish = require('../models/schema').Dish
     
     // AUTHENTICATION MIDDLEWARE -------------------
@@ -40,61 +40,94 @@ module.exports = function(app, db) {
     // CRUD APIS -------------------
     
     app.post('/createDish', function(req, res) {
-                    
-        var dish = new Dish({ 
-            name: req.body.name, 
-            restaurantName: req.body.restaurantName
-        });
-
-        dish.save(function(err) {
-      
-            if (err) 
-                throw err;
-        
-            console.log('Dish Created Successfully');
-      
-            res.json({ success: true });
-        });
-           
+        try
+        {
+            var dish = new Dish({ 
+                name: req.body.name,
+                price: req.body.price,
+                size: req.body.size,
+                isAvailable: req.body.isAvailable, 
+                restaurant: req.body.restaurant
+            });
+    
+            dish.save(function(err, data) {
+          
+                if (err) 
+                    throw err;
+                  
+                res.json({ success: true, data: data});
+            })
+        }
+        catch(error)
+        {
+            res.json({ success: false, data: error});
+        }   
     });
     
     app.get('/getDish', function(req, res) {
-        
-        Dish.findOne({
-            name: req.query.name, 
-            restaurantName: req.query.restaurantName
-        }, function(err, dish) {
-            res.json(dish);
-        });
+        try
+        {
+            let query = {
+                "$and": [{name: req.query.name}, {restaurant: req.query.restaurant}]
+            }
+            
+            Dish.findOne(query, function(err, data) {
+                if(err)
+                    throw err;
+                
+                res.json({success: true, data: data});
+            })
+        }
+        catch(error)
+        {
+            res.json({success: false, data: error});
+        }
     });
 
     app.post('/updateDish', function(req, res) {
-        
-        Dish.findOneAndUpdate({
-            name: req.body.name, 
-            restaurantName: req.body.restaurantName
-        }, 
+        try
         {
-            name: req.body.name + "100"
-        }, function(err, data){
-            if(err)
-                throw err;
-            
-            res.json({success: true, data: data})
-        })    
+            let findQuery = {
+                "$and": [{name: req.body.name}, {restaurant: req.body.restaurant}]
+            }
+    
+            let updateQuery = {
+                price: req.body.price,
+                size: req.body.size,
+                isAvailable: req.body.isAvailable
+            }
+    
+            Dish.findOneAndUpdate(findQuery, updateQuery, function(err, data){
+                if(err)
+                    throw err;
+                
+                res.json({success: true, data: data})
+            })
+        }
+        catch(error)
+        {
+            res.json({success: false, data: error})
+        } 
     });
 
     app.post('/deleteDish', function(req, res) {
-        
-        Dish.findOneAndRemove({
-            name: req.body.name, 
-            restaurantName: req.body.restaurantName
-        }, function(err, data){
-            if(err)
-                throw err;
-            
-            res.json({success: true, data: data})
-        })
+        try
+        {                    
+            let query = {
+                "$and": [{name: req.body.name}, {restaurant: req.body.restaurant}]
+            }
+
+            Dish.findOneAndRemove(query, function(err, data){
+                if(err)
+                    throw err;
+                
+                res.json({success: true, data: data})
+            })
+        }
+        catch(error)
+        {
+            res.json({success: false, data: error})
+        }
     });
-    
+
 };
