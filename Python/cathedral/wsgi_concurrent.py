@@ -1,8 +1,3 @@
-###########################################################################
-# Concurrent WSGI server - webserver3h.py                                 #
-#                                                                         #
-# Tested with Python 2.7.9 on Ubuntu 14.04 & Mac OS X                     #
-###########################################################################
 import errno
 import os
 import signal
