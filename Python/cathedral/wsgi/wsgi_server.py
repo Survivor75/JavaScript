@@ -72,10 +72,7 @@ class WSGIServer(object):
 
     def get_environ(self):
         env = {}
-        # The following code snippet does not follow PEP8 conventions
-        # but it's formatted the way it is for demonstration purposes
-        # to emphasize the required variables and their values
-        #
+
         # Required WSGI variables
         env['wsgi.version']      = (1, 0)
         env['wsgi.url_scheme']   = 'http'
@@ -88,7 +85,8 @@ class WSGIServer(object):
         env['REQUEST_METHOD']    = self.request_method    # GET
         env['PATH_INFO']         = self.path              # /
         env['SERVER_NAME']       = self.server_name       # localhost
-        env['SERVER_PORT']       = str(self.server_port)  # 8888
+        env['SERVER_PORT']       = str(self.server_port)  # 8080
+
         return env
 
     def start_response(self, status, response_headers, exc_info=None):

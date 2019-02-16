@@ -1,11 +1,24 @@
+# Simple Client
+# import socket
+#
+#  # create a socket and connect to a server
+#  sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+#  sock.connect(('localhost', 8888))
+#
+#  # send and receive some data
+#  sock.sendall(b'test')
+#  data = sock.recv(1024)
+#  print(data.decode())
+
+#Complex Client
+
 import argparse
-import errno
 import os
 import socket
 
 
 SERVER_ADDRESS = 'localhost', 8888
-REQUEST = """\
+REQUEST = b"""\
 GET /hello HTTP/1.1
 Host: localhost:8888
 
@@ -45,3 +58,5 @@ if __name__ == '__main__':
     )
     args = parser.parse_args()
     main(args.max_clients, args.max_conns)
+
+# Start Command : python client3.py --max-clients=500
