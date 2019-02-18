@@ -121,7 +121,7 @@ specialForms.while = (args, scope) => {
     evaluate(args[1], scope);
   }
 
-  // Since undefined does not exist in Egg, we return false,
+  // Since undefined does not exist, we return false,
   // for lack of a meaningful result.
 
   return false;
