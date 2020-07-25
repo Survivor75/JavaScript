@@ -1,5 +1,5 @@
 # Unchained
-This repository contains Nuggets on the following : 1. JavaScript 2. Python
+This repository contains nuggets on the following : 1. JavaScript 2. Python
 
 ##  JavaScript
 
@@ -104,5 +104,3 @@ Ingredients for a simple Image Scraper
 5. Mozlla Firefox (as if you didn’t have it installed)
 6. Working internet connection (obviously)
 7. 30 minutes of your time (possibly less)
-
-### Cathedral
